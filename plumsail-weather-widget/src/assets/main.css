@@ -1,0 +1,38 @@
+@import "./base.css";
+
+@media all {
+  body {
+    display: flex;
+    place-items: flex-start;
+  }
+
+  #app {
+    max-width: 300px;
+    font-weight: normal;
+    display: grid;
+    padding: 2rem 2rem;
+  }
+  .gear{
+    flex-basis: 9% !important;
+    font-size: 28px;
+  }
+  .gear:hover{
+    cursor: pointer;
+  }
+  .container {
+
+    margin: 0 auto;
+  }
+  .grid-row{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .grid-item {
+    text-align: start;
+    flex-basis: 50%;
+    max-height: 150px; /*optional*/
+  }
+}

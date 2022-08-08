@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a17eeb17-605f-4c06-a6a5-0ea62a36cf9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/.eslintrc.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/assets/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/assets/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/interface/RegionObject.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/router/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/views/HomeView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/views/OptionsView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/tsconfig.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/vite.config.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2Cwv6REZIXsq4s9O3xffFA3HL7F" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Рабочий стол/vue example" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="D:\GitHub\Plumsail-test-task\plumsail-weather-widget\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a17eeb17-605f-4c06-a6a5-0ea62a36cf9a" name="Default Changelist" comment="" />
+      <created>1659726286209</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659726286209</updated>
+      <workItem from="1659726287378" duration="4664000" />
+      <workItem from="1659879402658" duration="15015000" />
+      <workItem from="1659967666572" duration="19318000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2690" y="38" key="FileChooserDialogImpl" timestamp="1659882083795">
+      <screen x="1982" y="-256" width="1858" height="1080" />
+    </state>
+    <state x="2690" y="38" key="FileChooserDialogImpl/0.0.1536.834/1982.-256.1858.1080@1982.-256.1858.1080" timestamp="1659882083795" />
+    <state x="2618" y="-132" width="586" height="831" key="find.popup" timestamp="1659728460422">
+      <screen x="1982" y="-256" width="1858" height="1080" />
+    </state>
+    <state x="2618" y="-132" width="586" height="831" key="find.popup/0.0.1536.834/1982.-256.1858.1080@1982.-256.1858.1080" timestamp="1659728460422" />
+    <state x="2574" y="-21" width="672" height="678" key="search.everywhere.popup" timestamp="1659885722558">
+      <screen x="1982" y="-256" width="1858" height="1080" />
+    </state>
+    <state x="2574" y="-21" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1982.-256.1858.1080@1982.-256.1858.1080" timestamp="1659885722558" />
+  </component>
+</project>

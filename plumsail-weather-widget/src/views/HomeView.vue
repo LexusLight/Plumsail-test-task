@@ -1,26 +1,59 @@
 <template>
-  <div>
-    <div class="grid-row">
-      <H1>Rybinsk, RUS</H1>
-    </div>
-    <div class="grid-row">
-      <H1>21 C</H1>
-    </div>
-    <div class="grid-row">
-      <div class="grid-item" style="flex-basis: 100%">Strong Weather Lorem ipsum 30 dolor sit amet bla bla</div>
-    </div>
-    <div class="grid-row">
-      <div class="grid-item">Parameters: ABC</div>
-      <div class="grid-item">{{test}}</div>
-      <div class="grid-item">Parameters2: 123</div>
-      <div class="grid-item">Parameters3: ZCD</div>
+  <div v-if="regions.length>0">
+    <div v-for="(region,index) in regions" class="cards">
+      <div>
+        <div class="grid-row">
+          <h3>
+            <font-awesome-icon class="icon" icon="fa-solid fa-house"/>
+            {{region.city}}
+          </h3>
+        </div>
+        <div class="grid-row">
+          <div >
+            <font-awesome-icon class="icon" icon="fa-solid fa-temperature-high"/>
+            {{region.temperature}}
+          </div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-item" style="flex-basis: 100%">
+            <font-awesome-icon class="icon" icon="fa-solid fa-cloud-sun"/>
+            {{region.weather}}
+          </div>
+          <div class="grid-item" style="flex-basis: 100%">
+            <font-awesome-icon class="icon" icon="fa-solid fa-comment-dots" />
+            {{region.about_weather}}
+          </div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-item">
+            <font-awesome-icon class="icon" icon="fa-solid fa-eye" /> Visibility:
+            {{region.visibility}}km.
+          </div>
+          <div class="grid-item">
+            <font-awesome-icon class="icon" icon="fa-solid fa-droplet" /> Humidity:
+            {{region.humidity}}%
+          </div>
+          <div class="grid-item">
+            <font-awesome-icon class="icon" icon="fa-solid fa-wind" />Wind:
+            {{region.wind_speed}}m\s
+          </div>
+          <div class="grid-item">
+            <font-awesome-icon class="icon" icon="fa-solid fa-arrows-to-circle" /> Pressure:
+            {{region.pressure}}hPa
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <div v-else>
+    <div class="cards"> No Regions Added! </div>
+  </div>
+
 </template>
 
 <script lang="ts">
   export default {
-    props: ["test"]
+    props: ["regions"],
   }
 </script>
 

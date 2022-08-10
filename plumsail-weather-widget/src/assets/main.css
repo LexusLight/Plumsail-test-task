@@ -7,10 +7,15 @@
   }
 
   #app {
-    max-width: 300px;
+    max-width: 325px;
     font-weight: normal;
     display: grid;
     padding: 2rem 2rem;
+  }
+  .icon{
+    flex-basis: 9% !important;
+    font-size: 20px;
+    width: 30px;
   }
   .gear{
     flex-basis: 9% !important;
@@ -19,16 +24,33 @@
   .gear:hover{
     cursor: pointer;
   }
+  .cards:nth-child(odd){
+    background-color: #7ac8ff;
+    color: #00487C;
+  }
+  .cards:nth-child(even){
+    background-color: #00487C;
+    color: #f8f8f8;
+  }
+  .cards:last-child{
+    border-radius: 0 0 10px 10px;
+  }
+  .toolbar{
+    border-radius: 10px 10px 0 0;
+    flex-basis: 80%;
+    height: 35px;
+    color: #f8f8f8;
+    background-color: #00487C;
+  }
   .container {
-
     margin: 0 auto;
   }
   .grid-row{
-    width: 300px;
+    width: 325px;
     display: flex;
     justify-content: space-between;
+    padding: 5px;
     flex-wrap: wrap;
-    margin-bottom: 10px;
   }
   .grid-item {
     text-align: start;

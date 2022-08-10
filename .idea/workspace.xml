@@ -20,25 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a17eeb17-605f-4c06-a6a5-0ea62a36cf9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/.eslintrc.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/assets/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/interface/RegionObject.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/router/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/views/HomeView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/views/OptionsView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/tsconfig.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plumsail-weather-widget/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumsail-weather-widget/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumsail-weather-widget/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/assets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumsail-weather-widget/src/interface/RegionObject.ts" beforeDir="false" afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/interface/RegionObject.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumsail-weather-widget/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumsail-weather-widget/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/views/HomeView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumsail-weather-widget/src/views/OptionsView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/plumsail-weather-widget/src/views/OptionsView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +69,7 @@
       <workItem from="1659726287378" duration="4664000" />
       <workItem from="1659879402658" duration="15015000" />
       <workItem from="1659967666572" duration="19318000" />
+      <workItem from="1660060148480" duration="37201000" />
     </task>
     <servers />
   </component>
@@ -108,9 +97,9 @@
       <screen x="1982" y="-256" width="1858" height="1080" />
     </state>
     <state x="2618" y="-132" width="586" height="831" key="find.popup/0.0.1536.834/1982.-256.1858.1080@1982.-256.1858.1080" timestamp="1659728460422" />
-    <state x="2574" y="-21" width="672" height="678" key="search.everywhere.popup" timestamp="1659885722558">
+    <state x="2574" y="-21" width="672" height="678" key="search.everywhere.popup" timestamp="1660081448480">
       <screen x="1982" y="-256" width="1858" height="1080" />
     </state>
-    <state x="2574" y="-21" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1982.-256.1858.1080@1982.-256.1858.1080" timestamp="1659885722558" />
+    <state x="2574" y="-21" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1982.-256.1858.1080@1982.-256.1858.1080" timestamp="1660081448480" />
   </component>
 </project>

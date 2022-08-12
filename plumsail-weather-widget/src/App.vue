@@ -3,7 +3,7 @@
     <div class="toolbar grid-row">
       <font-awesome-icon v-on:click="editWidget" class="grid-item gear" icon="fa-solid fa-gear"/>
     </div>
-    <RouterView v-bind:regions="regions" v-bind:addCustomRegion="addCustomRegion" v-bind:deleteRegion="deleteRegion" :key="regions"/>
+    <RouterView v-bind:regions="regions" v-bind:addCustomRegion="addCustomRegion" v-bind:deleteRegion="deleteRegion" v-bind:saveRegions="saveRegions"/>
   </div>
 </template>
 
@@ -12,8 +12,9 @@ import { RouterLink, RouterView } from 'vue-router'
 import {RegionObject} from "@/interface/RegionObject";
 import axios from "axios";
 import router from "@/router";
+import { defineComponent } from 'vue'
 
-export default{
+export default defineComponent({
   data(){
     return {
       regions: new Array<RegionObject>() || null,
@@ -24,14 +25,12 @@ export default{
       appid: "0046f25cba5aaac4500df334ec0aa5e3"
     }
   },
-
   mounted() {
-    // this.addLocalRegion()
     this.loadRegions()
     this.editWidget()
   },
   methods: {
-    addLocalRegion: function () {
+    addLocalRegion: function (): void {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((position) => {
           this.lat = position.coords.latitude
@@ -45,7 +44,7 @@ export default{
         });
       }
     },
-    addCustomRegion: function (city: string) {
+    addCustomRegion: function (city: string): void {
       const region = new RegionObject()
       region.getAndMapDataByCity(city, this.appid)
           .then(()=>{
@@ -54,8 +53,7 @@ export default{
             this.saveRegions()
           })
     },
-
-    editWidget: function (event) {
+    editWidget: function (): void {
       if(this.editMode){
         router.push('/')
       }else {
@@ -63,28 +61,34 @@ export default{
       }
       this.editMode = !this.editMode;
     },
-
-    saveRegions () {
-      const data = JSON.stringify(this.regions)
+    saveRegions: function (): void { //Сохраняем названия регионов
+      let data:any
+       data = this.regions.map((item) => {
+        return item.city
+      })
+      data = [...new Set(data)]
+      data = JSON.stringify(data)
       localStorage.setItem("regions",data)
     },
-
-    loadRegions () {
-      const data = localStorage.getItem("regions")
-      this.regions = JSON.parse(data)
-      if(this.regions.length == 0) {
+    loadRegions: function (): void { //Загружаем регионы и обновляем их
+      const data:any = localStorage.getItem("regions")
+      const loadedRegions = JSON.parse(data)
+      if(loadedRegions==null || loadedRegions.length == 0 ) {
         this.addLocalRegion()
+      }else {
+        loadedRegions.forEach((item:string)=>{
+          this.addCustomRegion(item)
+        })
       }
     },
-
-    deleteRegion (id:number) {
+    deleteRegion: function (id:number): void { //Удаляем регион
       this.regions = this.regions.filter((region)=>{
         return region.id != id
       });
       this.saveRegions()
     },
   }
-}
+})
 </script>
 
 <style>

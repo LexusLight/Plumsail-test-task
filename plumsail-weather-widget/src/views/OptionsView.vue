@@ -1,23 +1,38 @@
-<template xmlns="http://www.w3.org/1999/html">
+<template :key="regions">
   <div>
-    <input class="city-input" v-model="name" @keydown.enter="addRegion" placeholder="Add City">
-    <div v-for="region in regions" class="cards">
-      <div class="grid-row">
+    <input class="city-input" ref="input" v-model="name" @keydown.enter="addRegion" placeholder="Add City">
+    <draggable
+        :list="regions"
+        @start="drag=true"
+        @end="drag=false"
+        @change="saveRegions">
+      <template #item="{element}">
+        <div class="grid-row cards" >
           <font-awesome-icon class="gear grid-item" icon="fa-solid fa-bars"/>
-          <div class="option-name grid-item">{{region.city}}</div>
-          <font-awesome-icon class="gear grid-item" icon="fa-solid fa-trash-can" @click="deleteRegion(region.id)"/>
-      </div>
-    </div>
+          <div class="option-name grid-item">{{element.city}}</div>
+          <font-awesome-icon class="gear grid-item" icon="fa-solid fa-trash-can" @click="deleteRegion(element.id)"/>
+        </div>
+      </template>
+    </draggable>
   </div>
 </template>
 
 <script>
+import draggable from 'vuedraggable';
 export default {
-  props: ["regions","addCustomRegion","deleteRegion"],
+  data() {
+    return {
+      drag: false,
+    }
+  },
+  props: ["regions","addCustomRegion","deleteRegion","saveRegions"],
+  components: {
+    draggable,
+  },
   methods: {
     addRegion: function () {
       this.addCustomRegion(this.name);
-      this.name = ""
+      this.$refs.input.value = ''
     }
   }
 }

@@ -1,30 +1,30 @@
 import axios from "axios";
 
 interface IRegionObject {
-    id: number,
-    city: string,
-    country: string,
-    temperature: number,
-    weather: string,
-    about_weather: string,
-    visibility: string,
-    humidity: string,
-    wind_speed: number,
-    pressure: number
+    id: number | null,
+    city: string | null,
+    country: string | null,
+    temperature: number | null,
+    weather: string | null,
+    about_weather: string | null,
+    visibility: number | null,
+    humidity: string | null,
+    wind_speed: number | null,
+    pressure: number | null
 
 }
 
 class RegionObject implements IRegionObject{
-    id: number
-    city: string
-    country: string
-    temperature: number
-    weather: string
-    about_weather: string
-    visibility: string
-    humidity: string
-    wind_speed: number
-    pressure: number
+    id = 0
+    city = ""
+    country = null
+    temperature = null
+    weather = "null"
+    about_weather= null
+    visibility = 0
+    humidity = null
+    wind_speed = null
+    pressure = null
 
     constructor() {
     }
@@ -52,19 +52,35 @@ class RegionObject implements IRegionObject{
         {
             const weather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&exclude=daily&units=metric&appid=${appid}`)
             this.city = city
-            this.temperature = weather.data.main.temp
-            this.weather = weather.data.weather[0].main
-            this.about_weather = weather.data.weather[0].description
-            this.visibility = weather.data.visibility/1000
-            this.humidity = weather.data.main.humidity
-            this.wind_speed = weather.data.wind.speed
-            this.pressure = weather.data.main.pressure
+            this.mapData(weather)
         }
         catch
         {
             throw new Error("City Error")
         }
 
+    }
+
+    async updateInformation(appid: string) {
+        try
+        {
+            const weather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&exclude=daily&units=metric&appid=${appid}`)
+            this.mapData(weather)
+        }
+        catch
+        {
+            throw new Error("City Error")
+        }
+    }
+
+    mapData(weather:any){
+        this.temperature = weather.data.main.temp
+        this.weather = weather.data.weather[0].main
+        this.about_weather = weather.data.weather[0].description
+        this.visibility = weather.data.visibility/1000
+        this.humidity = weather.data.main.humidity
+        this.wind_speed = weather.data.wind.speed
+        this.pressure = weather.data.main.pressure
     }
 
 }

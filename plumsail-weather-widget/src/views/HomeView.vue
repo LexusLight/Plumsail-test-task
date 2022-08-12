@@ -1,4 +1,4 @@
-<template>
+<template :key="regions">
   <div v-if="regions.length>0">
     <div v-for="(region,index) in regions" class="cards">
       <div>
@@ -44,9 +44,6 @@
         </div>
       </div>
     </div>
-  </div>
-  <div v-else>
-    <div class="cards"> No Regions Added! </div>
   </div>
 
 </template>

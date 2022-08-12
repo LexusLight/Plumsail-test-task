@@ -14,7 +14,7 @@ import {
     faTemperatureHigh, faWind, faTrashCan
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add([faGear,faHouse,faTemperatureHigh,faCloudSun,faEye,faDroplet,faArrowsToCircle,faWind,faCommentDots,faBars,faTrashCan])
+library.add(faGear,faHouse,faTemperatureHigh,faCloudSun,faEye,faDroplet,faArrowsToCircle,faWind,faCommentDots,faBars,faTrashCan)
 
 const app = createApp(App)
 app.component('font-awesome-icon', FontAwesomeIcon)

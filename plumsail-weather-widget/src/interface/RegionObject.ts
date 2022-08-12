@@ -32,7 +32,7 @@ class RegionObject implements IRegionObject{
     async getAndMapDataByPosition(lat:number, lon:number, appid: string) {
         try{
             const weather = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=daily&units=metric&appid=${appid}`)
-            const city = await axios.get(`http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=${appid}`)
+            const city = await axios.get(`https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=${appid}`)
             this.city = city.data[0].name
             this.temperature = weather.data.current.temp
             this.weather = weather.data.current.weather[0].main
